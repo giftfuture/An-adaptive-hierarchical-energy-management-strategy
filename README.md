@@ -43,12 +43,12 @@ engine.Initialize_simulink(nargout=0)
 ```  
 Use this sentence to interact between Python and Matlab/Simulink. (You can call any Matlab function directly and return the results to Python. When you call a function with the engine, by default the engine returns a single output argument. If you know that the function can return multiple arguments, use the nargout argument to specify the number of output arguments.)  
 ```python
-SOC, PowReq, Clock, EquFuelCon= engine.Interaction(action, nargout=4)
+SOC, ReqPow, Clock, EquFuelCon= engine.Interaction(action, nargout=4)
 ```  
 This sentence realize the interaction between Python and Matlab/simulink. Use this sentence to transfer action from DDPG agent to simulation model of Simulink. Then transfer simulation data from simulation model back to DDPG agent of Python.    
 
 - SOC: Battery SOC.
-- PowReq: Power requirement. 
+- ReqPow: Required power. 
 - Clock: Simulation time. 
 - EquFuelCon: Equivalant fuel consumption.  
 - action: action of DDPG agent.  
