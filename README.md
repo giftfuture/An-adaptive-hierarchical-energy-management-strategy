@@ -12,11 +12,6 @@ Figure.1 An adaptive hierarchical energy management strategy combining heuristic
 - Tensorflow1.12  
 - Matlab2019B   
 
-## How to run:
-1. Add the folder which extracted from Proposed strategy.rar to the environment path of MATLAB.
-2. Put 'main.py' in 'main/system' then run it.
-3. Observe the printed results of each episode.
-
 ## Main files:
 - main.py: The main program containing the source of the proposed algorithm.  
 - Proposed strategy\main\System\HevP2ReferenceApplication: The simulink simulator of the hybrid electric vehicle.  
